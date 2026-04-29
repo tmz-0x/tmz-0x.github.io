@@ -3,15 +3,15 @@ import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Skills from './pages/Skills.jsx'
 import CTF from './pages/CTF.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 import Sidebar from './Component/Sidebar.jsx'
 import './App.css'; 
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   
 
   return (
-   <BrowserRouter>
+   <HashRouter>
       <div className="page">
           <div class="bg-grid"></div>
   <div class="bg-glow1"></div>
@@ -30,7 +30,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
