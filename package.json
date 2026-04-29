@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
 
-  
+  "homepage": "https://tmz-0x.github.io",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
