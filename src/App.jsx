@@ -1,4 +1,3 @@
-import Bugs from './pages/Bugs.jsx'
 import Home from './pages/Home.jsx'   
 import Projects from './pages/Projects.jsx'
 import Skills from './pages/Skills.jsx'
@@ -25,8 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/ctf" element={<CTF />} />
-            <Route path="/bugs" element={<Bugs />} />          
+            <Route path="/ctf" element={<CTF />} />        
           </Routes>
         </main>
       </div>

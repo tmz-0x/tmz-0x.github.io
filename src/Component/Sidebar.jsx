@@ -45,7 +45,7 @@ import { Link,useLocation } from 'react-router-dom';
         </svg>
       ),
     },
-    {
+   /* {
       label: "Bugs",
       path: "/bugs",
       icon: (
@@ -56,7 +56,7 @@ import { Link,useLocation } from 'react-router-dom';
           <path d="M4 11h16" />
         </svg>
       ),
-    },
+    },*/
   ]
 
 export default function Sidebar() {

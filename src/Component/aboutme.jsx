@@ -3,49 +3,57 @@ import './aboutme.css'
 export default function Aboutme({ onHomeClick }) {
    const stats = [
   { label: "based in", value: "Sri Lanka" },
-  { label: "focus", value: "web appsec · network" },
+  { label: "focus", value: "1% Better than yesterday" },
   { label: "status", value: "available" },
   { label: "bug bounty", value: "active hunter" },
 ]
 
 const journey = [
-  {
-    year: "2021",
-    title: "Started in cybersecurity",
-    desc: "Got into CTFs and HackTheBox. Learned fundamentals of networking, Linux, and web vulnerabilities from scratch."
+    {
+    year: "2026",
+    title: "Started in University Journey",
+    desc: "Started undergraduate degree  programme in B.comp(hons) Information Systems at university of sri jayewardhanapura "
   },
+
   {
-    year: "2022",
-    title: "First bug bounty findings",
-    desc: "Started hunting on public programs. Found first XSS and IDOR vulnerabilities. Submitted first reports on HackerOne."
+    year: "2025",
+    title: "Started in University Journey",
+    desc: "Started undergraduate degree  programme in B.comp(hons) Information Systems at university of sri jayewardhanapura "
   },
-  {
+   {
     year: "2023",
-    title: "Security research & CVEs",
-    desc: "Began deeper vulnerability research. Published first CVE. Started writing public technical writeups."
+    title: "Get passed from AL exam and qualified to university entry",
+    desc: "Qualified to university with higher score in Technology stream"
   },
-  {
-    year: "2024",
-    title: "Full focus on pentesting",
-    desc: "Expanding into red teaming, cloud security, Active Directory attacks and advanced web exploitation."
+   {
+    year: "2021",
+    title: "Started in cybersecurity Journey",
+    desc: "Started CyberSecurity carrier journey. Started because a excitement and faced obstacles when I was continuing this path"
   },
+
+ 
 ]
 
 const whatIDo = [
-  {
+ {
     num: "01",
     title: "Web App Security",
     desc: "Finding vulnerabilities in web applications — OWASP Top 10, logic flaws, auth bypasses, SSRF, XXE, injection attacks."
   },
-  {
+   {
     num: "02",
-    title: "Network Pentesting",
-    desc: "Internal and external network assessments, Active Directory attacks, lateral movement, privilege escalation."
+    title: "Front-end Development",
+    desc: "I make user interfaces using react, javascript, html and Css"
   },
   {
     num: "03",
+    title: "Backend & application Development",
+    desc: "Design backends using node.js and develop applications using Java,Python and C++"
+  },
+  {
+    num: "04",
     title: "Bug Bounty Hunting",
-    desc: "Active hunter on HackerOne and Bugcrowd. Focused on high-impact vulnerabilities with detailed technical reports."
+    desc: "Hunter on HackerOne and Bugcrowd. Focused on high-impact vulnerabilities with detailed technical reports previously. Intent to start again"
   },
 ]
 
@@ -77,14 +85,14 @@ const whatIDo = [
           Burn the script. Live the unwritten  
           </div>
           <p className="bio-text">
-            I'm Thisal Nanayakkara, a penetration tester and security
-            researcher based in Sri Lanka. I started in cybersecurity
-            out of curiosity and intention to know how the system works.
+            I am Thisal Nanayakkara, an observer operating in the space between code and the void. 
+  While the world is distracted by the rotation of the box, I study the mesh that holds it. 
+  I don't just hunt things; I map the shadows where the real mess is hidden.
           </p>
           <p className="bio-text">
-            Today I focus on web application security, network pentesting,
-            and bug bounty hunting. I document everything I find and
-            share it publicly.
+            Today I focus on full stack development, Bug bounty hunting,
+            and AI red Teaming. Also o I'm the undergraduate of university of sri jayawardhanapura
+          who pursuing degree B.comp(hons) Information Systems.
           </p>
         </div>
 

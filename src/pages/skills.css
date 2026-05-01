@@ -33,7 +33,10 @@
 .learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
 .learn-card{background:#0d0d1a;border:0.5px solid #1a1640;border-radius:10px;padding:16px 20px;position:relative;overflow:hidden;}
 .learn-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#1a2a1a,transparent);}
-.learn-badge{font-size:9px;color:#1D9E75;letter-spacing:0.1em;margin-bottom:8px;display:flex;align-items:center;gap:5px;}
+
+.learn-badge
+
+{font-size:9px;color:#1D9E75;letter-spacing:0.1em;margin-bottom:8px;display:flex;align-items:center;gap:5px;}
 .learn-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:#1D9E75;}
 .learn-title{font-size:13px;color:#e0d8ff;font-weight:500;margin-bottom:4px;}
 .learn-desc{font-size:11px;color:#7a7a9a;line-height:1.7;}

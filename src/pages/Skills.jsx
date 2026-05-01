@@ -7,6 +7,7 @@ export default function Skills() {
     skills: [
       { name: "OWASP Top 10", level: "advanced", percent: 90 },
       { name: "Burp Suite", level: "advanced", percent: 88 },
+      
       // add 
     ]
   },
@@ -27,7 +28,7 @@ export default function Skills() {
 
 const tools = [
   "Burp Suite", "Nmap", "Metasploit",
-  "Wireshark", "Gobuster", "ffuf",
+  "Wireshark", "Gobuster", "ffuf","evilwinrm","Amass"
   // add 
 ]
 

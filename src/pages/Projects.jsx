@@ -4,68 +4,52 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      category: "web_appsec",
-      name: "XSSHunter-Pro",
-      desc: "Automated XSS payload generator and blind XSS callback server. Supports DOM, reflected, and stored vectors with custom payload encoding.",
+      category: "Web Application",
+      name: "Tmx Portfolio",
+      desc: "My personal portfolio that represent my personal showcase. This represent my unique designes and my personalized experinces",
       tags: [
-        { label: "python", type: "purple" },
-        { label: "flask", type: "purple" },
-        { label: "web_appsec", type: "dim" },
-        { label: "payloads", type: "dim" }
+        { label: "React", type: "purple" },
+        { label: "Css(tailwind)", type: "purple" },
+        { label: "Javascript", type: "purple" },
       ],
       stars: 0,
       forks: 0,
       live: true,
-      github: "https://github.com/yourusername/xsshunter-pro"
+      github: "https://tmz-0x.github.io/#/"
     },
       {
     id: 2,
-    category: "network",
-    name: "SubEnum",
-    desc: "Fast subdomain enumerator combining passive OSINT sources with active DNS brute-force. Outputs to JSON, CSV, or feeds directly into nuclei.",
+    category: "Web app",
+    name: "Final project react course",
+    desc: "It tested react knowledge that covered through course and covered react simple usecases, ES6 elements, Hooks, Redux etc.",
     tags: [
-      { label: "go", type: "purple" },
-      { label: "recon", type: "purple" },
-      { label: "osint", type: "dim" },
-      { label: "dns", type: "dim" }
+      { label: "React", type: "purple" },
+      { label: "redux", type: "purple" },
+      { label: "Javascript", type: "purple" },
+      { label: "HTML & CSS", type: "dim" }
     ],
-    stars: 89,
-    forks: 21,
+    stars: 0,
+    forks: 0,
     live: true,
-    github: "https://github.com/yourusername/subenum"
+    github: "https://github.com/tmz-0x/e-plantShopping"
   },
-   {
-    id: 2,
-    category: "network",
-    name: "SubEnum",
-    desc: "Fast subdomain enumerator combining passive OSINT sources with active DNS brute-force. Outputs to JSON, CSV, or feeds directly into nuclei.",
+{
+    id: 3,
+    category: "Web app API",
+    name: "Final project Backend Development course",
+    desc: "It tested node.js knowledge that covered through course and covered routes,Async/await,promises,callbacks and Express etc.",
     tags: [
-      { label: "go", type: "purple" },
-      { label: "recon", type: "purple" },
-      { label: "osint", type: "dim" },
-      { label: "dns", type: "dim" }
+      { label: "Node.js", type: "purple" },
+      { label: "Javascript", type: "purple" },
+       { label: "Express", type: "purple" },
     ],
-    stars: 89,
-    forks: 21,
+    stars: 0,
+    forks: 0,
     live: true,
-    github: "https://github.com/yourusername/subenum"
+    github: "https://github.com/tmz-0x/expressBookReviews"
   },
-   {
-    id: 2,
-    category: "network",
-    name: "SubEnum",
-    desc: "Fast subdomain enumerator combining passive OSINT sources with active DNS brute-force. Outputs to JSON, CSV, or feeds directly into nuclei.",
-    tags: [
-      { label: "go", type: "purple" },
-      { label: "recon", type: "purple" },
-      { label: "osint", type: "dim" },
-      { label: "dns", type: "dim" }
-    ],
-    stars: 89,
-    forks: 21,
-    live: true,
-    github: "https://github.com/yourusername/subenum"
-  },
+  
+   
   ];
 
   return (
