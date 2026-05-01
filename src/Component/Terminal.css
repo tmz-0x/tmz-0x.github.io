@@ -8,13 +8,13 @@
     width: min(100%, 590px);
     min-width: 280px;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 6px;
     position:relative;
     overflow:hidden;
     font-family: jetbrains mono, monospace;
     display: flex;
     flex-direction: column;
-    height: 300px; /* Fixed height to prevent growing */
+    height: 280px; /* Fixed height to prevent growing */
 }
 
 .terminal-header{

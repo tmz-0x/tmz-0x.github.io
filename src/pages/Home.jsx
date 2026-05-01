@@ -45,7 +45,7 @@ export default function Home() {
       <Terminal />
       
 
-      <button className="aboutme"  onClick={handleShowAboutMe}>About me</button>
+      <button className="aboutme"  onClick={handleShowAboutMe}>Need more?</button>
      
         
         

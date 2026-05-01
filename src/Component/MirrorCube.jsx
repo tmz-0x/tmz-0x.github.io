@@ -147,7 +147,7 @@ export default function TruthMirrorMonolith() {
         zIndex: -1, // Behind the text
         pointerEvents: 'none',
         display: 'block',
-        transform: 'translateY(273px)',
+        transform: 'translateY(253px)',
         
          // Allow text selection through the cube
       }} 
