@@ -9,6 +9,21 @@
   
 }
 
+:root {
+  --vh: 1vh;
+}
+
+.mobile-mode body,
+.mobile-mode #root,
+.mobile-mode .page-wrapper {
+  min-height: calc(var(--vh) * 100) !important;
+  height: auto !important;
+}
+
+
+
+
+
 body{
   margin:0;
   font-family: 'Inter', sans-serif;

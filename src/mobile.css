@@ -1,141 +1,95 @@
-/* ─────────────────────────────── */
-/*   GLOBAL MOBILE FIX (ALL PAGES) */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   GLOBAL MOBILE LAYOUT FIXES                    */
+/* ─────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
-
-  html, body, #root {
-    height: auto !important;
-    min-height: 100vh !important;
+  html, body {
     overflow-x: hidden !important;
-    overflow-y: auto !important;
-  }
-
-  .page {
-    height: auto !important;
-    min-height: 100vh !important;
-    overflow: visible !important;
   }
 
   main {
     height: auto !important;
-    min-height: auto !important;
+    min-height: calc(var(--vh) * 100) !important;
     overflow-y: auto !important;
     overflow-x: hidden !important;
   }
-
-  .about,
-  .skills-page,
-  .ctf-page,
-  .projects-page,
-  .landing-page {
-    min-height: auto !important;
-    height: auto !important;
-  }
 }
 
-/* ─────────────────────────────── */
-/*   SIDEBAR + NAV MOBILE FIX      */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   SIDEBAR + MAIN CONTENT ALIGNMENT              */
+/* ─────────────────────────────────────────────── */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .sidebar-container {
-    width: 64px;
-    padding: 20px 14px;
-  }
-
-  .sidebar-container nav {
-    gap: 32px;
-  }
-
-  .nav-pill svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  main {
-    margin-left: 64px !important;
-    width: calc(100% - 64px) !important;
-  }
-}
-
-@media (max-width: 640px) {
-  .sidebar-container {
-    width: 56px;
-    padding: 16px 10px;
-  }
-
-  .sidebar-container nav {
-    gap: 26px;
-  }
-
-  .nav-pill svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .tooltip {
-    display: none;
+    width: 56px !important;
+    padding: 16px 10px !important;
   }
 
   main {
     margin-left: 56px !important;
     width: calc(100% - 56px) !important;
   }
+
+  .nav-pill svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .tooltip {
+    display: none !important;
+  }
 }
 
 @media (max-width: 480px) {
   .sidebar-container {
-    width: 50px;
-    padding: 14px 8px;
-  }
-
-  .nav-pill svg {
-    width: 16px;
-    height: 16px;
+    width: 50px !important;
+    padding: 14px 8px !important;
   }
 
   main {
     margin-left: 50px !important;
     width: calc(100% - 50px) !important;
   }
+
+  .nav-pill svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
 }
 
-/* ─────────────────────────────── */
-/*   LANDING PAGE MOBILE FIX       */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   LANDING PAGE MOBILE FIX                       */
+/* ─────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
+  .landing-page {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
   .headline,
   .Main-name,
   .description {
     transform: translateY(0) !important;
-    text-align: center;
-    padding: 12px;
-  }
-
-  .landing-page {
-    align-items: center;
+    padding: 12px !important;
+    text-align: center !important;
   }
 
   .social-links {
-    margin-top: 0;
-    justify-content: center;
+    justify-content: center !important;
+    margin-top: 0 !important;
   }
 }
 
-/* ─────────────────────────────── */
-/*   ABOUT ME PAGE MOBILE FIX      */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   ABOUT ME — MOBILE COLLAPSIBLE VERSION         */
+/* ─────────────────────────────────────────────── */
 
-@media (max-width: 900px) {
-   .aboutme_container {
-    position: static !important;     /* remove fixed behavior */
-    top: auto !important;
-    left: 0 !important;
+@media (max-width: 768px) {
+  .aboutme_container {
+    position: static !important;
     width: 100% !important;
 
-    /* collapsible behavior */
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -144,119 +98,131 @@
   }
 
   .aboutme_container.visible {
-    max-height: 3000px;              /* enough to show full content */
+    max-height: 3000px;
     opacity: 1;
   }
-}
 
-@media (max-width: 640px) {
-  .aboutme_container {
-    left: 56px !important;
-    width: calc(100% - 56px) !important;
+  .bio-section {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .what-grid {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
-@media (max-width: 480px) {
-  .aboutme_container {
-    left: 50px !important;
-    width: calc(100% - 50px) !important;
+@media (max-width: 600px) {
+  .what-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .bio-name {
+    font-size: 22px !important;
+  }
+
+  .tl-item {
+    grid-template-columns: 60px 1fr !important;
   }
 }
 
-/* ─────────────────────────────── */
-/*   PROJECTS PAGE MOBILE FIX      */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   PROJECTS PAGE MOBILE FIX                      */
+/* ─────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
 @media (max-width: 480px) {
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
-/* ─────────────────────────────── */
-/*   SKILLS PAGE MOBILE FIX        */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   SKILLS PAGE MOBILE FIX                        */
+/* ─────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .learning-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
 @media (max-width: 480px) {
   .learning-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
-/* ─────────────────────────────── */
-/*   CTF PAGE MOBILE FIX           */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   CTF PAGE MOBILE FIX                           */
+/* ─────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .ctf-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
 @media (max-width: 480px) {
   .ctf-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
-/* ─────────────────────────────── */
-/*   TERMINAL MOBILE FIX           */
-/* ─────────────────────────────── */
+/* ─────────────────────────────────────────────── */
+/*   TERMINAL MOBILE FIX                           */
+/* ─────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .terminal {
-    height: 240px;
-    padding: 14px 16px;
+    height: 240px !important;
+    padding: 14px 16px !important;
   }
 
   .tr {
-    font-size: 13px;
+    font-size: 13px !important;
   }
 }
 
 @media (max-width: 480px) {
   .terminal {
-    height: 200px;
+    height: 200px !important;
   }
 }
 
-/* MOBILE VERSION OF THE WEBGL MONOLITH */
+/* ─────────────────────────────────────────────── */
+/*   WEBGL MONOLITH MOBILE FIX                     */
+/* ─────────────────────────────────────────────── */
+
 @media (max-width: 768px) {
   canvas.truth-mirror {
     position: absolute !important;
-    right: 0 !important;
     left: 0 !important;
+    right: 0 !important;
     margin: 0 auto !important;
 
     width: 100vw !important;
-    height: 60vh !important;
+    height: 55vh !important;
 
     transform: translateY(0) !important;
+    opacity: 0.45 !important;
+    pointer-events: none !important;
     z-index: -1 !important;
-    opacity: 0.45; /* softer on mobile */
   }
 }
 
 @media (max-width: 480px) {
   canvas.truth-mirror {
     height: 50vh !important;
-    opacity: 0.35;
+    opacity: 0.35 !important;
   }
 }
-

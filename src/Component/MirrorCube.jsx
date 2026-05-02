@@ -2,6 +2,42 @@ import { useEffect, useRef } from 'react'
 
 export default function TruthMirrorMonolith() {
   const canvasRef = useRef(null);
+  
+  useEffect(() => {
+  function resizeCanvas() {
+    const canvas = canvasRef.current;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const isMobile = vw < 768;
+
+    if (isMobile) {
+      canvas.style.position = "absolute";
+      canvas.style.left = "0";
+      canvas.style.right = "0";
+      canvas.style.margin = "0 auto";
+      canvas.style.width = vw + "px";
+      canvas.style.height = vh * 0.55 + "px";
+      canvas.style.transform = "translateY(0)";
+      canvas.style.opacity = "0.45";
+    } else {
+      canvas.style.position = "fixed";
+      canvas.style.right = "-20%";
+      canvas.style.width = "70vw";
+      canvas.style.height = "100vh";
+      canvas.style.transform = "translateY(253px)";
+      canvas.style.opacity = "1";
+    }
+  }
+
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+  window.addEventListener("orientationchange", resizeCanvas);
+
+  return () => {
+    window.removeEventListener("resize", resizeCanvas);
+    window.removeEventListener("orientationchange", resizeCanvas);
+  };
+}, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;

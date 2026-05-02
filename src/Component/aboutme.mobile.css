@@ -115,4 +115,20 @@
   .what-card {
     padding: 16px;
   }
+
+  @media (max-width: 768px) {
+  .aboutme_container {
+    position: static !important;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.45s ease, opacity 0.35s ease;
+  }
+
+  .aboutme_container.visible {
+    max-height: 3000px;
+    opacity: 1;
+  }
+}
+
 }

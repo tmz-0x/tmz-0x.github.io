@@ -6,12 +6,18 @@ import Sidebar from './Component/Sidebar.jsx'
 import './App.css'; 
 import './App.mobile.css';
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import { applyMobileRuntime } from "./mobile-runtime";
+import { useEffect } from "react";
 
 function App() {
-  
+  useEffect(() => {
+    applyMobileRuntime();
+  }, []);
 
   return (
+     
    <HashRouter>
+    <div className="page-wrapper">
       <div className="page">
           <div class="bg-grid"></div>
   <div class="bg-glow1"></div>
@@ -29,7 +35,9 @@ function App() {
           </Routes>
         </main>
       </div>
+       </div>
     </HashRouter>
+   
   )
 }
 
