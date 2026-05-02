@@ -152,7 +152,7 @@ height: 100%;
   width:100%;
    margin-left: 0px;
   padding-top: 0px;
-  height: 100dvh!important;/* Force it to match the screen exactly */
+  min-height: 100vh !important;/* Force it to match the screen exactly */
   overflow: hidden !important;
 }
 
