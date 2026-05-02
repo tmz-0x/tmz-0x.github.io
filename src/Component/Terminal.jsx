@@ -49,15 +49,26 @@ export default function Terminal() {
     },
     {
       command: '.ls',
-      description: './Reveal.sh <br/> /F#ck_society.txt '
+      description: './Reveal.sh <br/> ./F#ck_society.txt '
     },
     {
       command: './Reveal.sh',
       description: `Operate in the silence between the bits.<br/><br/> Most see a rotating structure; <br/> See the absence that defines it.<br/> <br/>Security isn't found in the walls.it's found in the gaps.<br/> I am the observer in the void, mapping the vulnerabilities that light is too fast to catch.`    },
     {
-      command: 'cat F#ck_society.txt',
-      description: 'who is rat you or me?'
-    },
+  command: './F#ck_society.txt',
+  description: `[!] Analyzing current environment... <br/>
+[!] Warning: Infinite loop detected. <br/>
+[!] Process: "Rat Race" is consuming 99% of human bandwidth. <br/>
+<br/>
+"The world is running a script it didn't write. <br/>
+While they compete for the finish line, <br/>
+I’m mapping the shadows of the maze. <br/>
+<br/>
+Logic has glitches. I am the observer." <br/>
+<br/>
+[√] Breakpoint set. <br/>
+[√] You are now in the void.`
+},
   ];
 
   const handleInputChange = (e) => {
@@ -97,7 +108,7 @@ export default function Terminal() {
           <div className="tdot" style={{ background: '#ff5f57' }}></div>
           <div className="tdot" style={{ background: '#febc2e' }}></div>
           <div className="tdot" style={{ background: '#28c840' }}></div>
-          <span className="title">root@tmx: ~</span>
+          <span className="title"> Welcome root@tmx : start with <strong>.help</strong></span>
         </div>
       </div>
       <div className="terminal-body">

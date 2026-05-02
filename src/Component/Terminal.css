@@ -5,10 +5,9 @@
     border:0.5px solid #1a1640;
     border-radius:12px;
     padding:20px 28px;
-    width: min(100%, 590px);
-    min-width: 280px;
-    max-width: 100%;
-    margin-top: 6px;
+    width: min(100%, 620px);
+    max-width: 100%;       /* min-width: 280px;*/
+    margin-top: 1px; 
     position:relative;
     overflow:hidden;
     font-family: jetbrains mono, monospace;

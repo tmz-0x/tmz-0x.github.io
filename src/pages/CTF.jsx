@@ -1,15 +1,57 @@
 import { useState } from 'react'
 import './ctf.css'
 const ctfs = [
+  
   {
     id: 1,
-    name: "Sightless",
+    name: "Eighteen",
+    platform: "HackTheBox",
+    difficulty: "easy",
+    desc: "",
+    tags: [],
+    date: "22 Nov 2025",
+    link: "https://labs.hackthebox.com/achievement/machine/783867/805"
+  },
+  {
+    id: 2,
+    name: "Nanocorp",
+    platform: "HackTheBox",
+    difficulty: "hard",
+    desc: "",
+    tags: [],
+    date: "15 Nov 2025",
+    link: "https://labs.hackthebox.com/achievement/machine/783867/802"
+  },
+  {
+    id: 3,
+    name: "Editor",
+    platform: "HackTheBox",
+    difficulty: "easy",
+    desc: "",
+    tags: [],
+    date: "07 Nov 2025",
+    link: "https://labs.hackthebox.com/achievement/machine/783867/684"
+  },
+  {
+    id: 4,
+    name: "Giveback",
     platform: "HackTheBox",
     difficulty: "medium",
-    desc: "your description here",
-    tags: ["RCE", "SSTI", "docker"],
-    date: "Jan 2025",
-    link: "https://hackthebox.com/machines/sightless"
+    desc: "",
+    tags: [],
+    date: "06 Nov 2025",
+    link: "https://labs.hackthebox.com/achievement/machine/783867/796"
+  },
+
+  {
+    id: 5,
+    name: "Paper",
+    platform: "HackTheBox",
+    difficulty: "easy",
+    desc: "",
+    tags: [],
+    date: "22 May 2022",
+    link: "https://labs.hackthebox.com/achievement/machine/783867/432"
   },
   // add more...
 ]
@@ -36,10 +78,9 @@ export default function CTF() {
 
       {/* stats bar — total, per platform */}
         <div class="stats-bar">
-    <div class="stat"><div class="stat-v">70</div><div class="stat-l">total solved</div></div>
-    <div class="stat"><div class="stat-v">12</div><div class="stat-l">HackTheBox</div></div>
-    <div class="stat"><div class="stat-v">8</div><div class="stat-l">TryHackMe</div></div>
-    <div class="stat"><div class="stat-v">4</div><div class="stat-l">other</div></div>
+    <div class="stat"><div class="stat-v">75</div><div class="stat-l">total solved</div></div>
+    <div class="stat"><div class="stat-v">68</div><div class="stat-l">HackTheBox</div></div>
+    <div class="stat"><div class="stat-v">7</div><div class="stat-l">TryHackMe</div></div>
   </div>
       {/* filter buttons */}
       <div className="filter-bar">
@@ -71,7 +112,7 @@ export default function CTF() {
       </div>
       <div class="card-bottom">
         <span class="card-date">{ctf.date}</span>
-        <a class="card-link" href={ctf.link} target="_blank">writeup ↗</a>
+        <a class="card-link" href={ctf.link} target="_blank">Proof ↗</a>
       </div>
 
             
